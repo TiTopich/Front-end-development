@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator if...else Statement</title>
+    <link rel="stylesheet">
+</head>
+
+<body>
+
+    <script>
+        var number_a = prompt('Please enter first number');
+        var operator = prompt('Please enter operator +, -, *,/ ');
+        var number_b = prompt('Please enter second number');
+
+        number_a= parseInt(number_a);
+        number_b= parseInt(number_b);
+
+        
+        if (operator == '+') {
+            result= number_a + number_b;
+
+        } else if (operator == '-') {
+            result= number_a - number_b;
+
+        } else if (operator == '*') {
+             result= number_a * number_b;
+
+        } else if (operator == '/'){
+            result = number_a / number_b;
+
+        } else {
+            console.log('Incorrect value');
+        }
+        
+        alert('The result is:' + result);
+
+        
+
+    </script>
+</body>
+
+</html>
