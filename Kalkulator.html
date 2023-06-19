@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet">
+</head>
+
+<body>
+    <script>
+
+
+        var number_a = prompt('Please enter first number');
+        var operator = prompt('Please enter operator +, -, *,/ ');
+        var number_b = prompt('Please enter second number');
+
+        let result;
+
+        number_a = parseInt(number_a);
+        number_b = parseInt(number_b);
+
+        switch (operator) {
+            case '+':
+                result = number_a + number_b;
+                console.log('number_a + number_b = result');
+                break;
+
+            case '-':
+                result = number_a - number_b;
+                console.log('number_a - number_b = result');
+                break;
+
+            case '*':
+                result = number_a * number_b;
+                console.log('number_a * number_b = result');
+
+            case '/':
+                result = number_a / number_b;
+                console.log('number_a / number_b = result');
+
+            default:
+                console.log('Invalid operator');
+                break;
+        }
+
+
+        alert('The result is:' + result);
+
+
+
+
+    </script>
+</body>
+
+</html>
